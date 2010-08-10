@@ -1,0 +1,28 @@
+#summary PyWO screenshots and animations
+#labels Featured
+
+= PyWO in action =
+
+== Float ==
+
+http://kosciak.blox.pl/resource/PyWO_float.gif
+
+Float windows in any direction. Windows will snap to other windows' edges.
+
+== Resize (Expand and Shrink) ==
+
+http://kosciak.blox.pl/resource/PyWO_expand_shrink.gif
+
+Resize windows in any direction.
+
+== Put  ==
+
+http://kosciak.blox.pl/resource/PyWO_put.gif
+
+Put windows in predefined positions on the screen (without resizing them).
+
+== Grid ==
+
+http://kosciak.blox.pl/resource/PyWO_grid.gif
+
+Put windows in predefined positions and resize to predefined sizes. Here you can see default 3x2 grid layout.
