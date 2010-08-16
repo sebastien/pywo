@@ -29,8 +29,12 @@ Put windows in predefined positions and resize to predefined sizes. Here you can
 
 == Switch ==
 
+http://kosciak.blox.pl/resource/PyWO_switch.gif
+
 Switch current window's place with other window, keep focus on the current window.
 
 === Cycle ==
+
+http://kosciak.blox.pl/resource/PyWO_cycle.gif
 
 Cycle contents of the current window with other window.
