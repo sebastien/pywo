@@ -1,0 +1,20 @@
+#summary PyWO configuration reference
+
+= `.pyworc` =
+
+== `[SETTINGS]` ==
+
+=== `numlock` ===
+
+=== `caplock` ===
+
+=== `invert_on_resize` ===
+
+=== `vertical_first` ===
+
+=== `layout` ===
+
+=== `ignore` ===
+
+
+== `[KEYS]` ==
