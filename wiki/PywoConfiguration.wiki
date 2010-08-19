@@ -2,19 +2,36 @@
 
 = `.pyworc` =
 
+Create `.pyworc` file in your $HOME directory if you want to set up Python Window Organizer. If no `~/.pyworc` is found the defaults are used. You can specify only settings you want to change, the rest will be loaded from defaults.
+
+`.pyworc` must contain two sections `[SETTINGS]` and `[KEYS]` described below. Any other section will be treated as a definition of window's screen position.
+
 == `[SETTINGS]` ==
+
+This section contains main settings
 
 === `numlock` ===
 
+How NumLock state should be treated.
+
 === `caplock` ===
+
+How CapsLock state shoudl be treated.
 
 === `invert_on_resize` ===
 
+Some windows (for example terminals) can be resized only be incremental steps. This option define if window's gravity should be inverted when window was resized by Window Manager on grid action.
+
 === `vertical_first` ===
+
+Behaviour of diagonal movement/resizing.
 
 === `layout` ===
 
-=== `ignore` ===
+Select predefined layout of the grid.
 
+=== `ignore_actions` ===
+
+Ignore those actions.
 
 == `[KEYS]` ==
