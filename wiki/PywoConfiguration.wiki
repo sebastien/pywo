@@ -8,15 +8,28 @@ Create `.pyworc` file in your $HOME directory if you want to set up Python Windo
 
 == `[SETTINGS]` ==
 
-This section contains main settings
+This section contains main settings:
 
 === `numlock` ===
 
-How NumLock state should be treated.
+How `Numlock state should be treated.
+
+ {{{numlock = on}}} - PyWO keyboard shortcuts work only when Numlock is on
+
+ {{{numlock = off}}} - PyWO keyboard shortcuts work only when Numlock is off
+
+ {{{numlock = ignore}}}  - ignore Numlock state *(default)*
 
 === `caplock` ===
 
-How CapsLock state shoudl be treated.
+How Capslock state should be treated. *Work's only in the `/trunk` version!*
+
+ {{{capslock = on}}} - PyWO keyboard shortcuts work only when Capslock is on
+
+ {{{capslock = off}}} - PyWO keyboard shortcuts work only when Capslock is off
+
+ {{{capslock = ignore}}}  - ignore Capslock state *(default)*
+
 
 === `invert_on_resize` ===
 
@@ -32,6 +45,6 @@ Select predefined layout of the grid.
 
 === `ignore_actions` ===
 
-Ignore those actions.
+Ignore selected actions.
 
 == `[KEYS]` ==
