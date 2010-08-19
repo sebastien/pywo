@@ -222,3 +222,13 @@ widths = HALF, 1.0/3*2
 === `heights` ===
 
 List of window heights to be used in grid action. You can use predefined sizes: {{{QUARTER, THIRD, HALF, FULL}}} or provide your own value. See examples for `widths`.
+
+== Sample section definition ==
+{{{
+[top-left]
+direction = TOP_LEFT
+position = TOP_LEFT
+gravity = TOP_LEFT
+widths = THIRD, HALF, THIRD*2
+heights = THIRD, HALF, THIRD*2
+}}}
