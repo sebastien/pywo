@@ -26,7 +26,7 @@ How `Numlock state should be treated.
  {{{numlock = ignore}}}  - ignore Numlock state *(default)*
 
 
-=== `caplock` ===
+=== `capslock` ===
 
 How Capslock state should be treated. *Work's only in the `/trunk` version!*
 
@@ -41,6 +41,8 @@ How Capslock state should be treated. *Work's only in the `/trunk` version!*
 
 Some windows (for example terminals) can be resized only using incremental steps. This option define if window's gravity should be inverted when window was resized by Window Manager on grid action.
 
+http://kosciak.blox.pl/resource/PyWO_invert_on_resize.png
+
  {{{invert_on_resize = yes}}} - invert window's gravity *(default)*
 
  {{{invert_on_resize = no}}} - keep defined gravity
@@ -49,6 +51,8 @@ Some windows (for example terminals) can be resized only using incremental steps
 === `vertical_first` ===
 
 Behaviour of diagonal movement/resizing.
+
+http://kosciak.blox.pl/resource/PyWO_vertical_first.png
 
  {{{vertical_first = yes}}} - First try to move/resize vertically, then horizontally *(default)*
 
@@ -85,7 +89,7 @@ List of ignored actions. Valid actions names: {{{float, expand, shrink, grid, gr
 
 == `[KEYS]` ==
 
-This section defines keyboard shortcuts definitions. Use `Modifier1-Modifier2-Key` format.
+This section defines keyboard shortcuts definitions. Use `MOD1-MOD2-KEY` format.
 
 Valid key modifiers: {{{Shift, Ctrl, Alt, Super}}}
 
@@ -188,7 +192,9 @@ List of ignored actions for this section.
 
 === `direction` ===
 
-Direction of move, expand, shrink actions. You can use one of the predefined directions: {{{TOP_LEFT, TOP, TOP_RIGHT, LEFT, MIDDLE, RIGHT, BOTTOM_LEFT, BOTTOM, BOTTOM_RIGHT}}} or define your own direction by providing values for percentage of x and y:
+Direction of move, expand, shrink actions. You can use one of the predefined directions: {{{TOP_LEFT, TOP, TOP_RIGHT, LEFT, MIDDLE, RIGHT, BOTTOM_LEFT, BOTTOM, BOTTOM_RIGHT}}} or define your own direction by providing values for percentage of x and y.
+
+http://kosciak.blox.pl/resource/PyWO_directions.png
 
 {{{
 direction = RIGHT
