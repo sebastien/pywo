@@ -20,6 +20,7 @@ How `Numlock state should be treated.
 
  {{{numlock = ignore}}}  - ignore Numlock state *(default)*
 
+
 === `caplock` ===
 
 How Capslock state should be treated. *Work's only in the `/trunk` version!*
@@ -35,16 +36,121 @@ How Capslock state should be treated. *Work's only in the `/trunk` version!*
 
 Some windows (for example terminals) can be resized only be incremental steps. This option define if window's gravity should be inverted when window was resized by Window Manager on grid action.
 
+ {{{invert_on_resize = yes}}} - invert window's gravity *(default)*
+
+ {{{invert_on_resize = no}}} - keep defined gravity
+
+
 === `vertical_first` ===
 
 Behaviour of diagonal movement/resizing.
+
+ {{{vertical_first = yes}}} - First try to move/resize vertically, then horizontally *(default)*
+
+ {{{vertical_first = no}}} - First try to move/resize horizontally, then vertically
+
 
 === `layout` ===
 
 Select predefined layout of the grid.
 
+ {{{layout = grid_2x2}}} - use predefined 2 by 2 grid layout
+
+ {{{layout = grid_3x2}}} - use predefined 3 by 2 grid layout *(default)*
+
+ {{{layout = grid_3x3}}} - use predefined 3 by 3 grid layout
+
+ {{{layout = custom}}} - define your own layout in `.pyworc` file
+
+ {{{layout = FILE_NAME}}} - use layout defined in `~/FILE_NAME` file
+
+
 === `ignore_actions` ===
 
-Ignore selected actions.
+List of ignored actions. Valid actions names: {{{float, expand, shrink, grid, grid_width, grid_height, put, switch, cycle}}}
+
+ {{{ignore = shrink}}} - ignore only
+
+ {{{ignore = cycle, switch}}} - ignore cycle and switch actions
+
+ {{{ignore = grid}}} - ignore grid action
+
+ {{{ignore = grid_height}}} - ignore height cycling in grid
+
 
 == `[KEYS]` ==
+
+This section defines keyboard shortcuts definitions. Use `Modifier1-Modifier2-Key` format
+
+Valid key modifiers: {{{Shift, Ctrl, Alt, Super}}}
+
+PyWO uses key names used by [http://python-xlib.sourceforge.net/ python-xlib] 
+
+
+=== `float` ===
+
+Modifier(s) for float action
+
+ {{{float = Alt }}}
+
+=== `expand` ===
+
+Modifier(s) for expand action
+
+ {{{expand = Shift}}}
+
+=== `shrink` ===
+
+Modifier(s) for shrink action
+
+ {{{shrink = Alt-Shift}}}
+
+=== `put` ===
+
+Modifier(s) for put action
+
+ {{{put = Alt-Cltrl}}}
+
+=== `grid_width` ===
+
+Modifier(s) for grid action - cycle widths
+
+ {{{grid_width = Ctrl}}}
+
+=== `grid_height` ===
+
+Modifier(s) for grid action - cycle heihts
+
+ {{{grid_height = Shift-Ctrl}}}
+
+=== `switch` ===
+
+Modifier(s) and key for switch action
+
+ {{{switch = Alt-KP_Divide}}}
+
+=== `cycle` ===
+
+Modifier(s) and key for cycle action
+
+ {{{cycle = Alt-Shift-KP_Divide}}}
+
+=== `exit` ===
+
+Modifier(s) and key for exiting PyWO
+
+ {{{exit = Ctrl-Alt-Shift-Q}}}
+
+=== `reload` ===
+
+Modifier(s) and key for reloading configuration file(s)
+
+ {{{reload = Ctrl-Alt-Shift-R}}}
+
+=== `debug` ===
+
+Modifier(s) and key for printing debug informations about window manager and current window
+
+ {{{debug = Ctrl-Alt-Shift-I}}}
+
+= Layout definition =
