@@ -78,13 +78,13 @@ Select predefined layout of the grid.
 
 List of ignored actions. Valid actions names: {{{float, expand, shrink, grid, grid_width, grid_height, put, switch, cycle}}}
 
- {{{ignore = shrink}}} - ignore only
+ {{{ignore_actions = shrink}}} - ignore only
 
- {{{ignore = cycle, switch}}} - ignore cycle and switch actions
+ {{{ignore_actions = cycle, switch}}} - ignore cycle and switch actions
 
- {{{ignore = grid}}} - ignore grid action
+ {{{ignore_actions = grid}}} - ignore grid action
 
- {{{ignore = grid_height}}} - ignore height cycling in grid
+ {{{ignore_actions = grid_height}}} - ignore height cycling in grid
 
 
 == `[KEYS]` ==
